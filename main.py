@@ -1,3 +1,13 @@
+'''
+INSTRUKCJA:
+
+python main.py *przycisk, który chcemy wyszukać na ekranie*
+
+Dostępne przyciski do wyszukania:
+1. "play"
+2. "chrome"
+'''
+
 import sys
 import pyautogui
 import cv2
@@ -13,7 +23,7 @@ akcja = sys.argv[1]
 
 
 class Finding:
-    
+
     def show_find_thing(self):
         img_rgb = cv2.imread(ss)
         template = cv2.imread(find)
